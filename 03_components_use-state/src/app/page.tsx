@@ -13,9 +13,9 @@ function Home() {
 
            {/* <h1>My Name is {myName} </h1> */} 
 
-           <h1>{2 + 3}</h1>
+           {/* <h1>{2 + 3}</h1> */}
 
-           <Addition/>
+           <Addition/>   
          </>
 }
 
@@ -44,6 +44,11 @@ opar ki tarf Typescript ka code isliye likhty hain taky veriable, array ya kuch 
 Component ke andar HTML ke andar ham Typescript ko use kar rhy hain curly braces {} laga ke or isme ham pora ka pora 
 typescript bhi use kar sakty hain. <h1> {2 + 3} </h1> same is HTML tag mein typscript ki functionality ko use kar rhy hain.
 
+
+Click + f12
+
+main file mein import huy component ke self-closing tag ke jese hi f12 button press karenge to wo hamen us component ki
+origenal file pe ley jaega jahn usy create kiyya gaya hoga.
 
 
 
