@@ -84,6 +84,4 @@ jaenge bar bar code likhna nahi parega.
 
 
 
-
-
 */
