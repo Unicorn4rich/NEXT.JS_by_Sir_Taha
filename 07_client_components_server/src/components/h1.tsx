@@ -2,6 +2,8 @@
 
 import React from 'react'
 
+
+
 // Example 1
 
 // function H1(props: {name: string, last: string, middle: string }) {
@@ -17,9 +19,10 @@ import React from 'react'
 // export default H1
 
 
+// <------------------------------------------------------END----------------------------------------------------------->
+ // Example 2 
 
-// // Example 2 
-
+ 
 // function H1(props: {data: {firstName: string, middleName: string, lastName: string}}) {  // argument ke topr pe bheje gaye Object ko paramater mein receive kar rhy hain uski data type define kar ke. 
 
 //   return (
@@ -33,8 +36,9 @@ import React from 'react'
 // export default H1
 
 
-
+// <------------------------------------------------------END----------------------------------------------------------->
 // Example 3
+ 
 
 // function H1({data}: {data: {firstName?: string, middleName: string, lastName: string}}) { // props mein se data ko ham destructure kar rhy hain matlab nikal rhy hain. or iske parameter ko ham optional bhi bana sakty hain. 
 
@@ -49,6 +53,7 @@ import React from 'react'
 // export default H1
 
 
+// <------------------------------------------------------END----------------------------------------------------------->
 
 // example 4 
 
