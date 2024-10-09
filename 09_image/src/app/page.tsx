@@ -1,34 +1,34 @@
-// "use client"  // sari import files ke top par likhenge to work karega.
+"use client"  // sari import files ke top par likhenge to work karega.
 
-// import react from "react"
-// import {useState} from "react"
-// import Para from "@/components/para"
+import react from "react"
+import {useState} from "react"
+import Para from "@/components/para"
 
 
-// // Child Function Flow => 
-// function Home() {
+// Child Function Flow => 
+function Home() {
 
-//   let [Value, setValue]= useState<string>("")  // (6)=> jab bhi new value Aegi component khud refresh hoga or hamen updated value show karega (Value) ke veriable mein.
+  let [Value, setValue]= useState<string>("")  // (6)=> jab bhi new value Aegi component khud refresh hoga or hamen updated value show karega (Value) ke veriable mein.
 
-//   // function =>     componrnt ke andar aik dosra function bnany ke liye ham (function) ka keyword use nahi karty.
+  // function =>     componrnt ke andar aik dosra function bnany ke liye ham (function) ka keyword use nahi karty.
 
-//   let get_data = (p: any)=> {   // (1) ye function bana kar isko as a argument pass kar rhy hain taky dosry page se isko chlaya jaa saky.
-//       setValue(p)  // (5)=> child Comp. se jo value aa rhi hai paramter mein usy hamne (useState) ke veriable mein update krwa diyya.
-//   }
+  let get_data = (p: any)=> {   // (1) ye function bana kar isko as a argument pass kar rhy hain taky dosry page se isko chlaya jaa saky.
+      setValue(p)  // (5)=> child Comp. se jo value aa rhi hai paramter mein usy hamne (useState) ke veriable mein update krwa diyya.
+  }
 
-//   return (
-//     <>
-//        <h1>I am Home Page</h1>
+  return (
+    <>
+       <h1>I am Home Page</h1>
 
-//        <h1>{Value}</h1>     {/* (7)=> (useState) ke andar jo value [setValue()] function se update ho kar aegi wo yahn show hogi */}
+       <h1>{Value}</h1>     {/* (7)=> (useState) ke andar jo value [setValue()] function se update ho kar aegi wo yahn show hogi */}
 
-//        <Para myName={"Ahmed"} func={get_data} />    {/* (2)=> yahn par ham is function ko argument|props bana kar pass kar rhy hain. Or props ki value change hogi to component apne ap rerender hoga matlab refresh */}
+       <Para myName={"Ahmed"} func={get_data} />    {/* (2)=> yahn par ham is function ko argument|props bana kar pass kar rhy hain. Or props ki value change hogi to component apne ap rerender hoga matlab refresh */}
          
-//     </>
-//   );
-// }
+    </>
+  );
+}
 
-// export default Home
+export default Home
 
 
 // <------------------------------------------------END------------------------------------------------------>
@@ -110,14 +110,6 @@ const nextConfig = {              =>  By-default Create hua huwa hoga bas hamen 
 };
 
 export default nextConfig;        =>  By-default
-
-
-
-
-
-
-
-
 
 
 */
