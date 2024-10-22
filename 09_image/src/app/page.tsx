@@ -41,7 +41,7 @@ function Home2(){
     <>
     <h1>I am Home Page2</h1>
 
-    {/* <Image src={"/pic.png"} alt="Profile Picture" width={200} height={200} />     {/* <= Download Image Work */}
+     <Image src={"/pic.png"} alt="Profile Picture" width={200} height={200} />    {/* <= Download Image Work */}
 
     <Image src={"https://shorturl.at/8t0pl"} alt="Imran Khan" width={200} height={200} />
 
