@@ -1,5 +1,11 @@
 import { get_Api } from "@/services/getAPI";  // kisi or file se api ko mangwa rhy hain.
 import Link from "next/link";
+import { MdPerson } from "react-icons/md";
+import { FaGithub } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+
 
 
 
@@ -188,9 +194,73 @@ export default async function Home() {
   return (
     <>
 
-       {apiData.map((item: any, index: any)=>{
-        return <Link href={`/${item.customerName}`}><h1 key={index}>Customer Name: {item.customerName}</h1></Link> 
+       {/* {apiData.map((item: any, index: any)=>{
+        return <section className="section">
+
+          <Link href={`/${item.customerName}`}>
+           <div className="main">
+             <div className="logo_div"><MdPerson size={60} /></div>
+           </div>
+          </Link>
+
+        </section>
+        })} */}
+
+
+
+  
+         <section className="section">
+
+        {apiData.map((item: any, index: any)=>{
+
+        return <div className="card" key={index}>
+          <div className="logo_card"><MdPerson size={170} /></div>
+
+          <h1 className="h1">Customer Name: <span className="span">{item.customerName}</span></h1>
+          <p>Yourname@gmail.com</p>
+          <h2>Developer | Designer</h2>
+
+          <div className="icons">
+            <div className="icon_bg"><FaGithub size={30} color="white"/></div>
+            <div className="icon_bg"><FaTwitter size={30} color="white"/></div>
+            <div className="icon_bg"><FaYoutube size={30} color="white"/></div>
+            <div className="icon_bg"><FaLinkedin size={30} color="white"/></div>
+          </div>
+
+          <button><Link href={`/${item.customerName}`}>Buy Now</Link></button>
+        </div>
+
         })}
+      </section>
+
+      
+
+
+
+        
+
+
+
+        {/* <section className="section">
+
+          <div className="card">
+            <div className="logo_card"><MdPerson size={170} /></div>
+
+            <h1 className="h1">Customer Name: <span className="span">Sir Taha</span></h1>
+            <p>Yourname@gmail.com</p>
+            <h2>Developer | Designer</h2>
+
+            <div className="icons">
+              <div className="icon_bg"><FaGithub size={30} color="white"/></div>
+              <div className="icon_bg"><FaTwitter size={30} color="white"/></div>
+              <div className="icon_bg"><FaYoutube size={30} color="white"/></div>
+              <div className="icon_bg"><FaLinkedin size={30} color="white"/></div>
+            </div>
+
+            <button>Buy Now</button>
+          </div>
+
+        </section> */}
 
 
     </>
@@ -198,7 +268,7 @@ export default async function Home() {
 }
 
 
-
+{/* <h1 key={index}>Customer Name: {item.customerName}</h1> */}
 
 
 

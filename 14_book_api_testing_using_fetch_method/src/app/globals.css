@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -18,4 +18,144 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+} */
+
+.section{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.card{
+  width: 300px;
+  height: 400px;
+  background-color: #43515a;
+  border-radius: 20px;
+  position: relative;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.logo_card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 7px solid #c54581;
+  background-color: white;
+  position: absolute;
+  left: 90px;
+  top: -50px;
+}
+
+.h1{
+  font-size: 17px;
+  color: white;
+}
+
+.span{
+  font-size: 20px;
+  font-weight: bold;
+  color: #c54581;
+}
+
+.card p{
+  color: rgb(185, 180, 180);
+  margin-top: 8px;
+}
+
+.card h2{
+  color: white;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.icons{
+  display: flex;
+  gap: 15px;  
+  margin-left: 45px;
+}
+
+.icon_bg{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c54581;
+  border-radius: 50%;
+}
+
+button{
+  width: 200px;
+  height: 30px;
+  background-color: #c54581;
+  border-radius: 20px;
+  color: white;
+  margin-top: 50px;
+  font-weight: 500;
+
+  &:hover{
+    background-color: #bb3b77;
+  }
+}
+
+
+/* Dynamic work start */
+
+.main{
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dynamic_sec{
+  width: 80%;
+  height: 400px;
+  background-color: #c2809fa8;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: white;
+}
+
+
+.book{
+  width: 40%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c54581;
+  border-radius: 20px;
+  position: absolute;
+  left: -40px;
+}
+
+.text_div{
+  height: 300px;
+  width: 55%;
+  background-color: #43515a;
+  margin-left: 440px;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px
+}
+
+.span2{
+  font-size: 17px;
+  font-weight: bold;
+  color: rgb(255, 255, 255)
 }
