@@ -6,6 +6,9 @@ import { UserRound } from 'lucide-react';
 import { Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { registerClient } from '@/services/auth';
+// import { redirect } from 'next/dist/server/api-utils';
+import { redirect } from 'next/navigation';
+
 
 function RegiterdPage() {
 
@@ -24,10 +27,11 @@ function RegiterdPage() {
         const token = response;                         // is varible mein token aa kar save ho gaya.
 
         localStorage.setItem("accessToken", token);     // yahn par token ko hamne localStorage mein store krwa taky ham is data alag alag pages mein get kar ke use kar saken or ye brwoser mein save hota hai or browser khud isy yad rakhta hai.
-        console.log(localStorage.getItem("accessToken"))  // token ko web brwoser comnsole mein check kar rhy hain ke token genrate ho rha hai ya nahi.
+       // console.log(localStorage.getItem("accessToken"))  // token ko web brwoser comnsole mein check kar rhy hain ke token genrate ho rha hai ya nahi.
         localStorage.setItem("clientName", name);      // or isme ham user ka name bhi brwoser ke andar store krwa rhy hain.
 
         alert("Successfully registered")
+
     } 
     else{
         alert(response); // or agr opar waly 2 errors mein se koi bhi error ata hai to yahn par uske response ko dikha do.

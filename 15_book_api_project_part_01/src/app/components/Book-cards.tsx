@@ -6,8 +6,6 @@ import { fetchBook } from '@/services/api'
 import  Link from 'next/link'
 
 
-
-
 async function BookCards() {
 
     const books = await fetchBook();
@@ -34,7 +32,9 @@ async function BookCards() {
                     </p>
 
                     <div className='absolute bottom-0 right-0 p-2 '>
-                        <Link href={"/register"}><Button className='bg-blue-600 hover:bg-blue-700 text-white'>Place an Order</Button></Link> 
+                        <Link href={"/register"}>
+                        <Button className='bg-blue-600 hover:bg-blue-700 text-white'>Place an Order</Button>
+                        </Link> 
                     </div>
                 </div>
 
