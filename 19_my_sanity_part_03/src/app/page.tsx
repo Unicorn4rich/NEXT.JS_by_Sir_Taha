@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default async function Home() {
 
-  const response = await client.fetch('*[_type == "hero"]{"alt": image.alt, heading, desc,"image": image.asset->url,}');
+  const response = await client.fetch("*[_type == 'hero']{'alt': image.alt, 'alt2': imageTwo.alt2, heading, desc, 'image': image.asset->url, 'imageTwo': imageTwo.asset->url,}");
 
   // const {} = response[]
  
@@ -13,16 +13,18 @@ export default async function Home() {
 <section className="text-gray-600 body-font">
   <div className="container px-5 py-24 mx-auto">
 
-    <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+    <div className="w-full flex flex-wrap gap-[10px]">
    
        {/* Card */}
       {response.map((item: any, index: any) => {  // bad mein any ki jagah interface bana denge.
         return(
+          <div className="p-4 md:w-[300px] sm:mb-0 mb-6 border-[1px] border-black bg-gray-200" key={index}>
 
-          <div className="p-4 md:w-1/3 sm:mb-0 mb-6" key={index}>
-             <div className="rounded-lg h-64 overflow-hidden relative">
-               <Image alt={item.alt} className="object-cover object-center h-full w-full" layout="fill" src={item.image}/>
-             </div>
+               <div className="flex justify-center gap-[10px]">
+                  <Image src={item.image} alt={item.alt} width={150} height={128} />
+                  <Image src={item.imageTwo} alt={item.alt2} width={150} height={128} />
+               </div>
+
                <h2 className="text-xl font-medium title-font text-gray-900 mt-5">{item.heading}</h2>
                <p className="text-base leading-relaxed mt-2">{item.desc}</p>
           </div>
